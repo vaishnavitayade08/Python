@@ -1,0 +1,80 @@
+# Write a Python program to calculate the length of a string.
+a = str(input("enter string: "))
+print(len(a))
+
+# Write a Python program to sum all the items in a list
+
+n = int(input('Enter  range: '))
+a = list(range(1, n+1))
+sum = 0
+for n in a:
+    sum += n
+print(sum)
+
+
+
+## hackerrank:
+
+if __name__ == '__main__':
+    N = int(input())
+    lst = []
+    
+    for _ in range(N):
+        command = input().split()
+        
+        if command[0] == "insert":
+            lst.insert(int(command[1]), int(command[2]))
+        
+        elif command[0] == "print":
+            print(lst)
+        
+        elif command[0] == "remove":
+            lst.remove(int(command[1]))
+        
+        elif command[0] == "append":
+            lst.append(int(command[1]))
+        
+        elif command[0] == "sort":
+            lst.sort()
+        
+        elif command[0] == "pop":
+            lst.pop()
+        
+        elif command[0] == "reverse":
+            lst.reverse()
+
+### Write a Python program to multiplies all the items in a list
+
+n = int(input('Enter  range: '))
+a = list(range(1, n+1))
+product = 1
+for n in a:
+    product *= n
+print(product)
+
+## Write a Python program to get the largest number from a list.
+a =  list(map(int, input("Enter numbers: ").split()))
+maximum = max(a)
+print(maximum)
+
+## Write a Python program to get the smallest number from a list
+a =  list(map(int, input("Enter numbers: ").split()))
+minimum = min(a)
+print(minimum)
+
+## Write a Python program to count the number of characters in a string. Go to the editor Sample String : 'google.com'
+
+a = str('google.com')
+print(len(a))
+
+## Write a Python program to count the number of characters (character frequency) in a string.
+str1 = 'google.com'
+dict = {}  
+for n in str1:  
+    keys = dict.keys()  
+    if n in keys:  
+        dict[n] += 1  
+    else:  
+        dict[n] = 1 
+print(dict) 
+   
